@@ -1,19 +1,18 @@
 {
-  "name": "defiswap-dump",
+  "name": "ethervista-dump",
   "version": "1.0.0",
-  "description": "Static set of addresses (Crypto.com DeFi Swap Ethereum mainnet)",
+  "description": "Static set of addresses (Ethervista Ethereum mainnet)",
   "keywords": [
-    "DeFiSwap",
-    "DEX",
-    "Crypto.com"
+    "Ethervista",
+    "DEX"
   ],
-  "homepage": "https://github.com/calp-pro/defiswap-dump#readme",
+  "homepage": "https://github.com/calp-pro/ethervista-dump#readme",
   "bugs": {
-    "url": "https://github.com/calp-pro/defiswap-dump/issues"
+    "url": "https://github.com/calp-pro/ethervista-dump/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/calp-pro/defiswap-dump.git"
+    "url": "git+https://github.com/calp-pro/ethervista-dump.git"
   },
   "license": "MIT",
   "author": "Vladimir Spirin (spirin.vladimir@gmail.com)",
