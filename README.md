@@ -6,15 +6,24 @@ Static set of addresses (Ethervista Ethereum mainnet).<br>
 New pairs updates happen every hour at GitHub Action [update.yml](https://github.com/calp-pro/uniswap-v2-dump/actions/workflows/update.yml)<br>
 via [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader)
 
-Data: `dump.csv` 140Kb+ 
+Data:
+- `dump_pairs.bin` 21 Kb+ 
+- `dump_tokens.bin` 21 Kb+
+- `dump_p2tt.bin` 6.3 Kb+
 
-CSV schema: `id,pair,token0,token1`
-
-## Example:
-```
-...
-5,0xddf0c37136d4d883f2c7a7571f848b1e3b926685,0x4c9edd5852cd905f086c759e8383e09bff1e68b3,0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
-...
+## Output format
+`load` and subscribe` methods return collection of pools/pairs.
+```js
+[
+    ...
+    {
+        id: 5,
+        pair: '0xddf0c37136d4d883f2c7a7571f848b1e3b926685',
+        token0: '0x4c9edd5852cd905f086c759e8383e09bff1e68b3',
+        token1: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
+    },
+    ...
+]
 ```
 where:
 - `5`
@@ -29,7 +38,7 @@ where:
 ## API
 Same implementation as other Uniswap v2 based protocols.<br>
 Base API reference: [uniswap-v2-loader](https://github.com/calp-pro/uniswap-v2-loader?tab=readme-ov-file#api-reference).<br>
-Predefined `filename` with value `dump.csv`.
+Predefined `filename` with value `dump` & `csv: false`.
 
 ## Usage CLI/API:
 ```bash
