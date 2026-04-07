@@ -1,6 +1,6 @@
 {
   "name": "ethervista-dump",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Static set of addresses (Ethervista Ethereum mainnet)",
   "keywords": [
     "Ethervista",
@@ -19,10 +19,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "node -e \"require('./index.js').load({workers: 0})\""
+    "start": "node -e \"require('./index.js').load({workers: 0})\"",
+    "test": "node --test test.js"
   },
   "dependencies": {
-    "uniswap-v2-loader": "^6.1.3"
+    "uniswap-v2-loader": "6.1.*"
   },
   "publishConfig": {
     "provenance": true
